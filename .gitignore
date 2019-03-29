@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/c
-# Edit at https://www.gitignore.io/?templates=c
+# Created by https://www.gitignore.io/api/c,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=c,visualstudiocode
 
 ### C ###
 # Prerequisites
@@ -56,8 +56,15 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Folders
-.vscode/
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# End of https://www.gitignore.io/api/c
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
 
+# End of https://www.gitignore.io/api/c,visualstudiocode
