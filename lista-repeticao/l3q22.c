@@ -1,14 +1,14 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(){
     int n, i, j, hipotenusa, cateto1, cateto2;
     scanf("%d", &n);
     for(i = 1; i<=n; i++){
-        for(j = i/2; j<i; i++){
-            cateto1 = i/2;
-            cateto2 = i/2 + 1;
-            while(cateto1*cateto1 + cateto2*cateto2 != i*i){
-                cateto1++;
+        for(j = 1; j<i; j++){
+            cateto1 = sqrt(i*i-j*j);
+            if(j<cateto1){
+                printf("hipotenusa = %d, catetos %d e %d\n", i, j, cateto1);
             }
         }
     }
