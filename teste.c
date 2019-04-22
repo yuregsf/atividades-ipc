@@ -1,31 +1,16 @@
 #include <stdio.h>
-#include <string.h>
 
-int main(void) {
-    char inputStr[1024];
-    int intVal;
+int main(){
+	int m;
+	double h, vh, s;
+	
+	while(m != 0 && h != 0 && vh != 0){
+		scanf("%d %f %f", &m, &h, &vh);
+		getchar();
+		if(m != 0){
+		 	printf("%d %.2lf\n", m, h * vh);    
+		}	
+	} 
 
-    // Loop forever.
-
-    for (;;) {
-        // Get a string from the user, break on error.
-
-        printf ("Enter your string: ");
-        if (fgets (inputStr, sizeof (inputStr), stdin) == NULL)
-            break;
-
-        // Break if nothing entered.
-
-        if (strcmp (inputStr, "\n") == 0)
-            break;
-
-        // Get and print integer.
-
-        if (sscanf (inputStr, "%d", &intVal) != 1)
-            printf ("scanf failure\n");
-        else
-            printf ("You entered %d\n", intVal);
-    }
-
-    return 0;
+	return 0;
 }
