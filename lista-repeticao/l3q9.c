@@ -8,8 +8,8 @@ int main(){
     if(numero == 0){
         fatorial = 1;
     }else{
-        for(i = 2; i <= numero; i++){
-            fatorial *= (i-1);
+        for(i = 1; i < numero; i++){
+            fatorial *= i;
         }
     }
     printf("%d! = %d\n", numero, fatorial);
